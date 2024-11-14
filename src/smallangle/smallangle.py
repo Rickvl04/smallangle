@@ -16,6 +16,8 @@ def cmd_group():
     show_default=True,
 )
 def sin(number):
+    """Takes the sine of NUMBER numbers between 0 and 2pi.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -29,6 +31,8 @@ def sin(number):
     show_default=True,
 )
 def tan(number):
+    """Takes the tangent of NUMBER numbers between 0 and 2pi.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
